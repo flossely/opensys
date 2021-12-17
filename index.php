@@ -1,5 +1,6 @@
 <?php
 $dir = '.';
+include 'getinit.php';
 $coord = file_get_contents('user.coord');
 $coordExp = explode(';', $coord);
 $coordX = $coordExp[0];
@@ -77,8 +78,8 @@ title="Left" onclick="move('a');">
 <input type="button" class="actionButton" value="H" title="Hide Panel" onclick="window.location.href='openspace.php';">
 <input type="button" class="actionButton" value="Q" title="Edit Stylesheet" onclick="window.location.href='edit.php?name='+dispX.innerText+'-'+dispY.innerText+'-'+dispZ.innerText+'.css&lock=false';">
 <input type="button" class="actionButton" value="E" title="Edit" onclick="window.location.href='edit.php?name='+dispX.innerText+'-'+dispY.innerText+'-'+dispZ.innerText+'.php&lock=false';">
-<input type="button" class="actionButton" value="U" title="Update" onclick="get('i','from','openspace','jesuscaesar');">
-<input type="button" class="actionButton" value="X" title="Exit" onclick="window.location.href='index.php';">
+<input type="button" class="actionButton" value="U" title="Update" onclick="get('i','from',<?=$thisSystem;?>,<?=$srcPubRepo;?>);">
+<input type="button" class="actionButton" value="X" title="Exit" onclick="get('r',<?=$thisSystem;?>,'hsis',<?=$srcPubRepo;?>);">
 </p>
 </div>
 <div class='panel'>
