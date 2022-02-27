@@ -15,12 +15,12 @@ $controls = ($_REQUEST['controls']) ? $_REQUEST['controls'] : 'no';
 <title>OpenSys</title>
 <link rel="shortcut icon" href="favicon.png?rev=<?=time();?>" type="image/x-icon">
 <?php if (file_exists($coordForm.'.css')) { ?>
-<link href="<?=$coordForm.'.css';?>" rel="stylesheet">
+<link href="<?=$coordForm.'.css';?>?rev=<?=time();?>" rel="stylesheet">
 <?php } else { ?>
-<link href="default.css?rev=<?=time();?>" rel="stylesheet">
+<link href="system.css?rev=<?=time();?>" rel="stylesheet">
 <?php } ?>
-<script src="jquery.js"></script>
-<script src="base.js"></script>
+<script src="jquery.js?rev=<?=time();?>"></script>
+<script src="base.js?rev=<?=time();?>"></script>
 <script>
 function move(side) {
     var x = Number(memX.value);
