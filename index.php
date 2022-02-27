@@ -67,13 +67,13 @@ function move(side) {
 <label id="dispY" name="<?=$coordY;?>"><?=$coordY;?></label>
 <label> : </label>
 <label id="dispZ" name="<?=$coordZ;?>"><?=$coordZ;?></label>
-<input type="button" class="actionButton" value="W" title="Forward" onclick="move('w');">
-<input type="button" class="actionButton" value="S" title="Back" onclick="move('s');">
-<input type="button" class="actionButton" value="A"
+<input type="button" class="actionButton" value="F" title="Forward" onclick="move('w');">
+<input type="button" class="actionButton" value="B" title="Back" onclick="move('s');">
+<input type="button" class="actionButton" value="L"
 title="Left" onclick="move('a');">
-<input type="button" class="actionButton" value="D" title="Right" onclick="move('d');">
-<input type="button" class="actionButton" value="R" title="Up" onclick="move('r');">
-<input type="button" class="actionButton" value="F" title="Down" onclick="move('f');">
+<input type="button" class="actionButton" value="R" title="Right" onclick="move('d');">
+<input type="button" class="actionButton" value="V" title="Up" onclick="move('r');">
+<input type="button" class="actionButton" value="D" title="Down" onclick="move('f');">
 <input type="button" class="actionButton" value="H" title="Hide Panel" onclick="window.location.href='openspace.php';">
 <input type="button" class="actionButton" value="Q" title="Edit Stylesheet" onclick="window.location.href='edit.php?name='+dispX.innerText+'-'+dispY.innerText+'-'+dispZ.innerText+'.css&lock=false';">
 <input type="button" class="actionButton" value="E" title="Edit" onclick="window.location.href='edit.php?name='+dispX.innerText+'-'+dispY.innerText+'-'+dispZ.innerText+'.php&lock=false';">
