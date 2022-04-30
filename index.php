@@ -19,8 +19,7 @@ $controls = ($_REQUEST['controls']) ? $_REQUEST['controls'] : 'no';
 <?php } else { ?>
 <link href="system.css?rev=<?=time();?>" rel="stylesheet">
 <?php } ?>
-<script src="jquery.js?rev=<?=time();?>"></script>
-<script src="base.js?rev=<?=time();?>"></script>
+<?php include 'base.incl.php'; ?>
 <script>
 function move(side) {
     var x = Number(memX.value);
